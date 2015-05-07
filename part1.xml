@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="32" inline="false" x="96" y="91">
+  <block type="controls_whileUntil" id="32" inline="false" x="45" y="154">
     <field name="MODE">WHILE</field>
     <value name="NUMBER">
       <block type="logic_compare" id="48" inline="true">
@@ -34,6 +34,26 @@
                         <field name="NUM">200</field>
                       </block>
                     </value>
+                    <next>
+                      <block type="variables_set" id="200" inline="true">
+                        <field name="VAR">distance</field>
+                        <value name="VALUE">
+                          <block type="math_arithmetic" id="261" inline="true">
+                            <field name="OP">ADD</field>
+                            <value name="A">
+                              <block type="variables_get" id="360">
+                                <field name="VAR">distance</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="math_number" id="331">
+                                <field name="NUM">1</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
                   </block>
                 </next>
               </block>
@@ -42,8 +62,5 @@
         </next>
       </block>
     </statement>
-    <next>
-      <block type="movement_reverse" id="198"></block>
-    </next>
   </block>
 </xml>
