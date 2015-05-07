@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="variables_set" id="364" inline="true" x="55" y="124">
+  <block type="variables_set" id="364" inline="true" x="63" y="32">
     <field name="VAR">distance</field>
     <value name="VALUE">
       <block type="math_number" id="374">
@@ -71,14 +71,7 @@
           </block>
         </statement>
         <next>
-          <block type="variables_set" id="455" inline="true">
-            <field name="VAR">distance</field>
-            <value name="VALUE">
-              <block type="math_number" id="462">
-                <field name="NUM">1</field>
-              </block>
-            </value>
-          </block>
+          <block type="oled_cleardisplay" id="471"></block>
         </next>
       </block>
     </next>
