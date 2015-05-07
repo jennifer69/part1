@@ -36,34 +36,30 @@
                 <next>
                   <block type="movement_stop" id="185">
                     <next>
-                      <block type="movement_forward" id="548">
+                      <block type="robot_delay" id="186" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="187">
+                            <field name="NUM">200</field>
+                          </block>
+                        </value>
                         <next>
-                          <block type="robot_delay" id="186" inline="true">
-                            <value name="DELAY">
-                              <block type="math_number" id="187">
-                                <field name="NUM">200</field>
-                              </block>
-                            </value>
-                            <next>
-                              <block type="variables_set" id="200" inline="true">
-                                <field name="VAR">distance</field>
-                                <value name="VALUE">
-                                  <block type="math_arithmetic" id="261" inline="true">
-                                    <field name="OP">ADD</field>
-                                    <value name="A">
-                                      <block type="variables_get" id="360">
-                                        <field name="VAR">distance</field>
-                                      </block>
-                                    </value>
-                                    <value name="B">
-                                      <block type="math_number" id="331">
-                                        <field name="NUM">1</field>
-                                      </block>
-                                    </value>
+                          <block type="variables_set" id="200" inline="true">
+                            <field name="VAR">distance</field>
+                            <value name="VALUE">
+                              <block type="math_arithmetic" id="261" inline="true">
+                                <field name="OP">ADD</field>
+                                <value name="A">
+                                  <block type="variables_get" id="360">
+                                    <field name="VAR">distance</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="math_number" id="331">
+                                    <field name="NUM">1</field>
                                   </block>
                                 </value>
                               </block>
-                            </next>
+                            </value>
                           </block>
                         </next>
                       </block>
