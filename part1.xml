@@ -71,7 +71,14 @@
           </block>
         </statement>
         <next>
-          <block type="movement_reverse" id="451"></block>
+          <block type="variables_set" id="455" inline="true">
+            <field name="VAR">distance</field>
+            <value name="VALUE">
+              <block type="math_number" id="462">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+          </block>
         </next>
       </block>
     </next>
