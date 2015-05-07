@@ -71,9 +71,14 @@
           </block>
         </statement>
         <next>
-          <block type="oled_cleardisplay" id="471"></block>
+          <block type="oled_cleardisplay" id="522">
+            <next>
+              <block type="movement_right" id="532"></block>
+            </next>
+          </block>
         </next>
       </block>
     </next>
   </block>
+  <block type="oled_cleardisplay" id="471" x="-119" y="305"></block>
 </xml>
